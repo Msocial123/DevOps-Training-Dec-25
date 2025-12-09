@@ -1,0 +1,80 @@
+    4  ls
+    5  touch index.html
+    6  ls
+    7  touch login.html signup.html
+    8  ls
+    9  vi index.html 
+   10  ls
+   11  cat index.html 
+   12  ls
+   13  nano login.html 
+   14  ls
+   15  cat login.html 
+   16  ls
+   17  vi index.html 
+   18  ls
+   19  cat index.html 
+   20  vi ipl
+   21  ls
+   22  cat ipl 
+   23  nano srh
+   24  ls
+   25  cat srh 
+   26  ls
+   27  rm i
+   28  rm index.html 
+   29  ls
+   30  rm srh 
+   31  ls
+   32  'rm ipl login.html
+   33  rm ipl login.html 
+   34  ls
+   35  mkdir dirA dirB dirC
+   36  ls
+   37  cd dirA
+   38  pwd
+   39  ls
+   40  touch demo app web
+   41  ls
+   42  mkdir ipl
+   43  ls
+   44  cd ipl/
+   45  ls
+   46  pwd
+   47  touch rr gt kkr mi csk rcb
+   48  ls
+   49  rm -rf *
+   50  ls
+   51  cd ..
+   52  ls
+   53  pwd
+   54  rmdir ipl/
+   55  ls
+   56  cd ..
+   57  ls
+   58  rmdir dirA
+   59  rm -rf dirA
+   60  ls
+   61  rm -rf *
+   62  ls
+   63  touch ipl demo web
+   64  ls
+   65  mv demo flip
+   66  ls
+   67  mv ipl srh
+   68  ls
+   69  mkdir amazon
+   70  ls
+   71  cd amazon/
+   72  ls
+   73  cd ..
+   74  ls
+   75  mv web amazon/
+   76  ls
+   77  cd amazon/
+   78  ls
+   79  mv web ..
+   80  ls
+   81  cd ..
+   82  ls
+   83  history
