@@ -1,0 +1,40 @@
+---
+- hosts: webservers
+  user: ansible
+  become: yes
+  connection: ssh
+  tasks:
+
+    - name: install java on my host machine
+      action: yum pkg=java state=present
+
+    - name: install docker on my host machine 
+      action: yum pkg=docker state=present 
+
+    - name: install httpd on my host machine 
+      action: yum pkg=httpd state=present
+       
+    - name: install python on my host machine
+      action: yum  pkg=python state=present
+
+# start services
+
+    - name: start docker service on my host machine
+      action: service name=docker state=started
+
+    - name: start httpd service on my host machine
+      action: service name=httpd state=started
+
+
+# uninstall all pkgs
+    - name: install java on my host machine
+      action: yum pkg="*java*" state=absent
+
+    - name: install docker on my host machine 
+      action: yum pkg=docker state=absent
+
+    - name: install httpd on my host machine 
+      action: yum pkg=httpd state=absent
+       
+    - name: install python on my host machine
+      action: yum  pkg=python state=absent
