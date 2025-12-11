@@ -1,0 +1,67 @@
+   26  ansible webservers -a "touch DevOps"
+   27  ls
+   28  ansible webservers -a "touch index.html login.html demo web app sample"
+   29  ansible webservers -a "mkdir ipl nasa isro"
+   30  ansible webservers -a "sudo yum install docker -y"
+   31  history
+   32  ansible webservers -a "rm DevOps"
+   33  history
+   34  ls
+   35  ansible webservers -a "rm index.html login.html demo web app sample"
+   36  ansible webservers -a "touch index.html login.html demo web app sample"
+   37  ansible webservers -a "rm index.html login.html demo web app sample"
+   38  ansible webservers -a "rmdir ipl nasa isro"
+   39  ansible webservers -a "sudo yum remove docker -y"
+   40  ls
+   41  vi my-first-playbook.yaml
+   42  ls
+   43  cat my-first-playbook.yaml
+   44  ls
+   45  ansible-plybook my-first-playbook.yaml --syntax
+   46  ansible-playbook my-first-playbook.yaml --syntax
+   47  vi my-first-playbook.yaml
+   48  cat my-first-playbook.yaml
+   49  ansible-playbook my-first-playbook.yaml --syntax
+   50  vi my-first-playbook.yaml
+   51  ansible-playbook my-first-playbook.yaml --syntax
+   52  ansible-playbook my-first-playbook.yaml --check
+   53  ansible-playbook my-first-playbook.yaml
+   54  ls
+   55  vi my-first-playbook.yaml
+   56  ansible-playbook my-first-playbook.yaml --syntax
+   57  ansible-playbook my-first-playbook.yaml --check
+   58  ansible-playbook my-first-playbook.yaml
+   59  vi my-first-playbook.yaml
+   60  ansible-playbook my-first-playbook.yaml
+   61  vi my-first-playbook.yaml
+   62  ansible-playbook my-first-playbook.yaml
+   63  vi my-first-playbook.yaml
+   64  ansible-playbook my-first-playbook.yaml
+   65  vi my-first-playbook.yaml
+   66  ansible-playbook my-first-playbook.yaml
+   67  vi my-first-playbook.yaml
+   68  > my-first-playbook.yaml
+   69  vi my-first-playbook.yaml
+   70  ansible-playbook my-first-playbook.yaml
+   71  ls
+   72  vi my-first-playbook.yaml
+   73  ls
+   74  ansible-vault encrypt my-first-playbook.yaml
+   75  ls
+   76  vi my-first-playbook.yaml
+   77  ls
+   78  vi my-first-playbook.yaml
+   79  ls
+   80  ansible-vault edit my-first-playbook.yaml
+   81  ls
+   82  ansible-vault create demo-playbook.yaml
+   83  ls
+   84  cat demo-playbook.yaml
+   85  ansible-vault edit demo-playbook.yaml
+   86  ls
+   87  ansible-vault decrytp my-first-playbook.yaml
+   88  ansible-vault decrypt my-first-playbook.yaml
+   89  vi my-first-playbook.yaml
+   90  ls
+   91  ansible-vault decrypt demo-playbook.yaml
+   92  history
