@@ -1,0 +1,19 @@
+---
+- hosts: webservers 
+  user: ansible
+  become: yes
+  connection: ssh
+  tasks: 
+
+
+    - name: uninstall httpd on my host machine 
+      action: yum pkg=httpd state=absent  # To uninstall 
+
+    - name: uninstall docker on my host machine
+      action: yum pkg=docker state=absent
+
+    - name: uninstall java on my host machine 
+      action: yum pkg=java-1.8.0-openjdk state=absent
+
+    - name: uninstall python on my host machine 
+      action: yum pkg=python state=absent

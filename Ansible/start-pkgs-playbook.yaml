@@ -1,0 +1,13 @@
+---
+- hosts: webservers 
+  user: ansible
+  become: yes
+  connection: ssh
+  tasks: 
+
+
+    - name: start httpd on my host machine 
+      action: service name=httpd state=started  # To start the svc
+
+    - name: install docker on my host machine
+      action: service name=docker state=started 
