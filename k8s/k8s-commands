@@ -1,0 +1,26 @@
+    4  kubectl get nodes
+    5  kubectl get namespace
+    6  kubectl get all -n kube-system
+    7  ls
+    8  kubectl create ns flipkart-ns
+    9  kubectl get ns
+   10  kubectl create ns meesho-ns
+   11  kubectl get ns
+   12  kubectl create ns jiohotstar-ns
+   13  kubectl create ns ajio-ns
+   14  kubectl get ns
+   15  ls
+   16  kubectl get ns
+   17  vi ns.yaml
+   18  ls
+   19  cat ns.yaml 
+   20  kubectl apply -f ns.yaml 
+   21  vi ns.yaml
+   22  kubectl get ns
+   23  ls
+   24  kubectl delete ns ajio-ns
+   25  kubectl get ns
+   26  kubectl delete ns meesh-ns
+   27  kubectl delete ns meesho-ns
+   28  kubectl get ns
+   29  history
