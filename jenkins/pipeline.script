@@ -1,0 +1,41 @@
+pipeline {
+    agent any
+    
+    environment {
+        SCANNER_HOME = tool 'sonar-scanner'
+    }
+
+    stages {
+        stage('git checkout') {
+            steps {
+                git 'https://github.com/Msocial123/fss-Retail-App_kubernetes.git'
+            }
+        }
+        
+        stage ('soanrqube alaysis'){
+            steps {
+                withSonarQubeEnv('sonar') {
+                   sh ''' $SCANNER_HOME/bin/sonar-scanner -Dsonar.projectKey=first-code-quality-proj -Dsonar.projectName='first-code-quality-proj' '''
+                 }
+            }
+        }
+        
+        stage ('docker build, tag and push'){
+            steps {
+                script {
+                    withDockerRegistry(credentialsId: 'docker-cred') {
+                        sh 'docker build -t retail-app:v1.1.0 .'
+                        sh 'docker tag retail-app:v1.0.0 muralisocial123/retail-app:v1.1.0'
+                        sh 'docker push muralisocial123/retail-app:v1.1.0'
+                   }
+                }
+            }
+        }
+        
+        stage ('deploy to container'){
+            steps{
+                sh 'docker run -d --name retail-app-2 -p 3133:3130 muralisocial123/retail-app:v1.1.0'
+            }
+        }
+    }
+}
